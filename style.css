@@ -37,3 +37,26 @@ body, html {
     background-color: #eec405;
     color: white;
   }
+
+  .main-article {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #ebebeb;
+  }
+  
+  .main-article  h1,
+  .article-text {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+  
+  .article-text {
+    background:rgb(255, 255, 255);
+  }
+  
+  .article-text > h2,
+  .article-text > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }

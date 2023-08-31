@@ -34,29 +34,59 @@ body, html {
   }
   
   .hero-text button:hover {
-    background-color: #eec405;
-    color: white;
+    background-color: #f8f7f7;
+    color: rgb(12, 12, 12);
   }
 
   .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .article-text {
+    max-width: 100vh;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+
+  h1 {
     margin: 0;
-    padding: 0.3rem;
-    background-color: #ebebeb;
+    font-size: 24px;
   }
-  
-  .main-article  h1,
-  .article-text {
-    margin: 0.5rem;
-    padding: 0.3rem;
-    font-size: 1.2rem;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
-  
-  .article-text {
-    background:rgb(255, 255, 255);
-  }
-  
-  .article-text > h2,
-  .article-text > p {
-    margin: 0.2rem;
-    font-size: 1rem;
+
+  p {
+    font-size: 16px;
+    line-height: 1.5; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      padding: 5px;
+    }
+
+    .gallery img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e0e2e4;
+    color: #424242;
   }
